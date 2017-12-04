@@ -2,7 +2,7 @@
 
 $conn_error='Could not connect.';
 
-$mysqli_host='localhost';
+$mysqli_host='mysql://bb7b6428344601:8626c690@us-cdbr-iron-east-05.cleardb.net/heroku_7adf718788690b0?reconnect=true';
 $mysqli_user='root';
 $mysqli_pass='';
 $mysqli_db='a_database';
