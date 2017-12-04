@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <title>Login Page</title>
+        <style>
+        .round
+        {
+            border: 1px solid #ccc;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            -moz-box-shadow: 2px 2px 3px #666;
+            -webkit-box-shadow: 2px 2px 3px #666;
+            box-shadow: 2px 2px 3px #666;
+            font-size: 20px;
+            padding: 4px 7px;
+            outline: 0;
+            -webkit-appearance: none;
+        }
+        input.rounded:focus
+        {
+           border-color: navajowhite;
+        }
+        *{
+    border: 1px solid black;
+    outline-color: red;
+}
+    </style>
+
+    </head>
+    <body background="Screenshot/back.jpg" style="no-repeat" >
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <ul class="nav navbar-nav col-sm-12">
+                <li class="active col-sm-2" style="padding: 10px">
+                    <a href="login.html" style="font-size: 19px"><img src="Screenshot/note2.png" width="25" height="25" alt="Notes_Share_note2">  Notes-Share
+                    </a>
+                </li>
+                <li class="col-sm-5"></li>
+                <li style="padding:20px 0px 0px 20px" class="col-sm-2" >
+                    <input class="round" type="text" placeholder="Username" id="username" name="username">
+                </li>
+                <li style="padding:20px 20px" class="col-sm-2">
+                    <input class="round" type="password" placeholder="Password" id="password" name="password">
+                </li>
+                <li style="padding: 17px 0px 0px 15px"><button class="btn btn-primary" style="border-radius: 4px;">Sign in</button></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <div class="container col-sm-12" style="padding: 35px 0px 0px 0px">
+        <div class="col-sm-5" style="padding: 50px 0px 0px 0px">
+            <img src="Screenshot/logo2.jpg" width="245px" height="456x" alt="notes_share_logo2" style="margin-left: 150px">
+        </div>
+        <div style="border-left:medium #33bebe solid; position:absolute; left:560px;  height:600px; padding: 0px 0px 0px 0px" class="col-sm-1">
+        </div>
+        <div style="padding: 100px; position: 7px;" class="col-sm-7" >
+            <p style="font-size:40px">Sign Up</p>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Name" width="300px">
+            <br>
+            <br>
+            <input type="password" id="pass1" name="pass1" placeholder="Password">
+            <br>
+            <br>
+            <input type="password" id="pass2" name="pass2" placeholder="Re-enter Password">
+            <br>
+            <br>
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <br>
+            <br>
+            <input type="date" id="date" name="date" placeholder="Date of birth" >
+            <br>
+            <br>
+            <button class="btn btn-primary" style="border-radius: 4px; width: 80px">Sign Up</button>
+        </div>
+        </div>
+        <div>
+        </div>
+        <footer class="row-footer" background-color="red">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-1 col-sm-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#  ">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <h5>Our Address</h5>
+                    <address>
+                      S.G.S.T.I.S. College<br>
+                      23, Park Road<br>
+                      Indore, M.P.<br>
+                      <i class="fa fa-phone"></i>Tel.: +91 8269036401<br>
+                      <i class="fa fa-fax"></i>Fax: +852 8765 4321<br>
+                      <i class="fa fa-envelope"></i>Email: <a href="#">ayoushchauhan1996@gmail.com</a>
+                   </address>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center><!--Â-->© Copyright 2016 Notes Sharing Systems</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
