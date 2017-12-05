@@ -8,10 +8,9 @@ $mysql_pass='8626c690';
 $mysql_db='heroku_7adf718788690b0';
 
 
-$conn=mysqli_connect($mysql_host, $mysql_user, $mysql_pass, $mysql_db);
-if(!$conn || !(mysqli_select_db($conn,$mysql_db)))
+$conn=mysql_connect($mysql_host, $mysql_user, $mysql_pass, $mysql_db);
+if(!$conn || !(mysql_select_db($conn,$mysql_db)))
 {
-	echo 'Connection Error';
-    //die($conn_error);
+    die($conn_error);
 }
 ?>
