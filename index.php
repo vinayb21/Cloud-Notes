@@ -65,7 +65,7 @@ else{
         <div class="row">
             <div class="container col-sm-12" id="second_block_pad">
                 <div class="col-sm-4" id="logo_pad">
-                    <img src="Screenshot/logo2.jpg" width="245px" height="456x" alt="notes_share_logo2" id="image_left_margin">
+                    <img src="Screenshot/Logo2.jpg" width="245px" height="456x" alt="notes_share_Logo2" id="image_left_margin">
                 </div>
                 <div class="col-sm-1">
                     <p class="grad"></p>
