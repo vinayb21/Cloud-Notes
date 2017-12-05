@@ -52,8 +52,6 @@ require 'core.inc.php';
                                 <li role="separator" class="divider"></li>
                                 <li class="dropdown-header">Coders</li>
                                 <li><a href="#vinay">Vinay Badhan</a></li>
-                                <li><a href="#ayush">Ayush Singh Chauhan</a></li>
-                                <li><a href="#avinash">Avinash Muvel</a></li>
                             </ul>
                         </li>
                         <li  style="padding: 6px 0px 0px 0px"><a href="contact.php"><i class="fa fa-envelope-o" style="color:white"></i><span style="color:white"> Contact</span></a></li>

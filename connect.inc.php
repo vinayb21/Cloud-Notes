@@ -11,6 +11,7 @@ $mysql_db='heroku_7adf718788690b0';
 $conn=mysqli_connect($mysql_host, $mysql_user, $mysql_pass, $mysql_db);
 if(!$conn || !(mysqli_select_db($conn,$mysql_db)))
 {
-    die($conn_error);
+	echo 'Connection Error';
+    //die($conn_error);
 }
 ?>
