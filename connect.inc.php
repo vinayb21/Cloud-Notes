@@ -2,13 +2,13 @@
 
 $conn_error='Could not connect.';
 
-$mysqli_host='us-cdbr-iron-east-05.cleardb.net';
-$mysqli_user='bb7b6428344601';
-$mysqli_pass='8626c690';
-$mysqli_db='heroku_7adf718788690b0';
+$mysql_host='us-cdbr-iron-east-05.cleardb.net';
+$mysql_user='bb7b6428344601';
+$mysql_pass='8626c690';
+$mysql_db='heroku_7adf718788690b0';
 
-$conn=mysqli_connect($mysqli_host, $mysqli_user, $mysqli_pass, $mysqli_db);
-if(!$conn || !(mysqli_select_db($conn,$mysqli_db)))
+$conn=mysql_connect($mysql_host, $mysql_user, $mysql_pass, $mysql_db);
+if(!$conn || !(mysql_select_db($conn,$mysql_db)))
 {
     die($conn_error);
 }
