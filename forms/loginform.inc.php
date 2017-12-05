@@ -20,6 +20,8 @@ if(isset($_POST['email'])&&isset($_POST['password'])){
                 header('Location: profilepage.php');
             }
         }
+        else
+            echo 'Pokemon';
     }
     else{
         echo 'You must submit an e-mail and a password.';
