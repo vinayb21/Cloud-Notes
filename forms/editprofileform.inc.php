@@ -3,28 +3,28 @@ require 'connect.inc.php';
 
     if( isset($_POST['firstname'])&&isset($_POST['lastname'])&&isset($_POST['email'])&&isset($_POST['date'])&&isset($_POST['education'])&&isset($_POST['location'])&&isset($_POST['profession'])&&isset($_POST['skills'])&&isset($_POST['interest'])
 &&isset($_POST['password'])&&isset($_POST['email'])&&isset($_POST['date'])&&isset($_POST['education'])&&isset($_POST['location'])&&isset($_POST['profession'])&&isset($_POST['skills'])&&isset($_POST['interest'])){
-        $firstname= mysqli_real_escape_string($conn,$_POST['firstname']);
-        $lastname= mysqli_real_escape_string($conn,$_POST['lastname']);
-        $password=mysqli_real_escape_string($conn,md5($_POST['password']));
+        $firstname= mysql_real_escape_string($conn,$_POST['firstname']);
+        $lastname= mysql_real_escape_string($conn,$_POST['lastname']);
+        $password=mysql_real_escape_string($conn,md5($_POST['password']));
         $password_hash=md5($password);
-        $email=mysqli_real_escape_string($conn,$_POST['email']);
-        $date=mysqli_real_escape_string($conn,$_POST['date']);
-        $profession=mysqli_real_escape_string($conn,$_POST['profession']);
-        $location=mysqli_real_escape_string($conn,$_POST['location']);
-        $skills=mysqli_real_escape_string($conn,$_POST['skills']);
-        $education=mysqli_real_escape_string($conn,$_POST['education']);
-        $interest=mysqli_real_escape_string($conn,$_POST['interest']);
+        $email=mysql_real_escape_string($conn,$_POST['email']);
+        $date=mysql_real_escape_string($conn,$_POST['date']);
+        $profession=mysql_real_escape_string($conn,$_POST['profession']);
+        $location=mysql_real_escape_string($conn,$_POST['location']);
+        $skills=mysql_real_escape_string($conn,$_POST['skills']);
+        $education=mysql_real_escape_string($conn,$_POST['education']);
+        $interest=mysql_real_escape_string($conn,$_POST['interest']);
 
         if(!empty($firstname) && !empty($lastname) && !empty($password) && !empty($email) && !empty($date) && !empty($profession) &&!empty($location) && !empty($education) && !empty($skills) &&!empty($interest)){
 
                 $query="SELECT `firstname`,`lastname`,`password`,`email`,`dob`,`profession`,`location`,`education`,`skills`,`interest` FROM `users` WHERE `firstname`='$firstname' && `lastname`='$lastname' && `password`='$password_hash' && `email`='$email' && `skills`='$skills' && `profession`='$profession' && `location`='$location'&& `education`='$education' && `dob`='$date' ";
-                $query_run=mysqli_query($conn,$query);
-                if(@mysqli_num_rows($query_run)==1){
+                $query_run=mysql_query($conn,$query);
+                if(@mysql_num_rows($query_run)==1){
                     echo "<h4>Enter a different value.</h4><br>";
                 }
                 else{
                     $query ="UPDATE `users` SET `firstname` = '$firstname',`lastname` = '$lastname', `password` = '$password', `dob` = '$date', `skills` = '$skills', `profession`= '$profession', `location` = '$location', `education` = '$education', `interest` = '$interest' WHERE `users`.`id` = '".$_SESSION['user_id']."' ";
-                    if($query_run = mysqli_query($conn,$query)){
+                    if($query_run = mysql_query($conn,$query)){
                        echo "Changed Profile Successfully<br>";
                     }
                     else{

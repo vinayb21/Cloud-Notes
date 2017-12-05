@@ -7,8 +7,8 @@ if(isset($_POST['submit']))
     $type = $_FILES['file']['type'];
     $tmp_name= $_FILES['file']['tmp_name'];
     $user_id2=$_SESSION['user_id'];
-    $pdf_topic=mysqli_real_escape_string($conn,$_POST['pdf_topic']);
-    $subject_id=mysqli_real_escape_string($conn,$_POST['subject_id']);
+    $pdf_topic=mysql_real_escape_string($conn,$_POST['pdf_topic']);
+    $subject_id=mysql_real_escape_string($conn,$_POST['subject_id']);
     if(isset($name) && isset($pdf_topic) && isset($subject_id))
     {
         if(!empty($name)&&!empty($pdf_topic)&&!empty($subject_id))
@@ -19,7 +19,7 @@ if(isset($_POST['submit']))
                 if(move_uploaded_file($tmp_name, $location.$name))
                 {
                     $query = "INSERT INTO `pdffile` VALUES('', '$user_id2', '$subject_id', '$location$name', '$pdf_topic') ";
-                    if($query_run = mysqli_query($conn,$query)){
+                    if($query_run = mysql_query($conn,$query)){
                     echo "<span style='color: black'>File Added Sucessfully.</span>";
                     echo '<a href="profilepage.php" style="color: red;">Click here to go back.</a>';
                     }

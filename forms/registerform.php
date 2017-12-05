@@ -19,12 +19,12 @@ require 'connect.inc.php';
                 echo '<h4>Passwords do not match.</h4><br>';
             }else{
                 $query="SELECT `email` FROM `users` WHERE `email`='$email'";
-                $query_run=mysqli_query($conn,$query);
-                if(@mysqli_num_rows($query_run)==1){
+                $query_run=mysql_query($conn,$query);
+                if(@mysql_num_rows($query_run)==1){
                     echo "<h4>User already exist.</h4><br>";
                 }
                 else{
-                    $query = "INSERT INTO `users` VALUES ('','".mysqli_real_escape_string($conn,$firstname)."','".mysqli_real_escape_string($conn,$lastname)."','".mysqli_real_escape_string($conn,md5($password))."','".mysqli_real_escape_string($conn,$email)."','".mysqli_real_escape_string($conn,$date)."','".mysqli_real_escape_string($conn,'Student')."','".mysqli_real_escape_string($conn,'Indore')."','".mysqli_real_escape_string($conn,'Under-graduate')."','','','uploads/default.png')";
+                    $query = "INSERT INTO `users` VALUES ('','".mysql_real_escape_string($conn,$firstname)."','".mysql_real_escape_string($conn,$lastname)."','".mysql_real_escape_string($conn,md5($password))."','".mysql_real_escape_string($conn,$email)."','".mysql_real_escape_string($conn,$date)."','".mysql_real_escape_string($conn,'Student')."','".mysql_real_escape_string($conn,'Indore')."','".mysql_real_escape_string($conn,'Under-graduate')."','','','uploads/default.png')";
                     if($query_run = mysqli_query($conn,$query)){
                         echo "You are registered Succesfully";
                     }
