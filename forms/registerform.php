@@ -25,7 +25,7 @@ require 'connect.inc.php';
                 }
                 else{
                     $query = "INSERT INTO `users` VALUES ('','".mysqli_real_escape_string($conn,$firstname)."','".mysqli_real_escape_string($conn,$lastname)."','".mysqli_real_escape_string($conn,md5($password))."','".mysqli_real_escape_string($conn,$email)."','".mysqli_real_escape_string($conn,$date)."','".mysqli_real_escape_string($conn,'Student')."','".mysqli_real_escape_string($conn,'Indore')."','".mysqli_real_escape_string($conn,'Under-graduate')."','','','uploads/default.png')";
-                    if($query_run = mysqlii_query($conn,$query)){
+                    if($query_run = mysqli_query($conn,$query)){
                         echo "You are registered Succesfully";
                     }
                     else{
