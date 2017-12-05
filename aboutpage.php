@@ -156,7 +156,7 @@ require 'core.inc.php';
         <hr class="col-sm-12" style="color:white">
       <div>
             <div class="col-xs-12" id="coders">
-                <h2 style="color:white">Coders</h2>
+                <h2 style="color:white">Coder</h2>
                 <div class="tab-content">
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
@@ -165,22 +165,6 @@ require 'core.inc.php';
                             </div>
                             <div role="tabpanel" class="panel-collapse collapse in" id="vinay" aria-labelledby="headingVinay">
                                 <p style="padding:0px 0px 0px 14px">Hails from Indore. Passionate about technology. Frontend developer using HTML5,CSS3,Bootstrap and Javascript.</p>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingAyush">
-                                <h3 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#ayush" aria-expanded="true" aria-controls="ayush">Ayush Singh Chauhan</a></h3>
-                            </div>
-                            <div role="tabpanel" class="panel-collapse collapse" id="ayush" aria-labelledby="headingAyush">
-                                <p style="padding:0px 0px 0px 14px">Back-end Developer of MySQLi Database and phpmyadmin.</p>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingAvinash">
-                                <h3 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#avinash" aria-expanded="true" aria-controls="avinash">Avinash Muvel</a></h3>
-                            </div>
-                            <div role="tabpanel" class="panel-collpase collapse" id="avinash" aria-labelledby="headingAvinash">
-                                <p style="padding:0px 0px 0px 14px">SRS developer</p>
                             </div>
                         </div>
                     </div>
@@ -212,7 +196,7 @@ require 'core.inc.php';
 
                       <i class="fa fa-phone"></i>Tel.: +91 8085519964<br>
                       <i class="fa fa-fax"></i>Fax: +852 8765 4321<br>
-                      <i class="fa fa-envelope"></i>  Email: <a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&hl=en&service=mail#identifier">vinay.badhan21@gmail.com</a><br><a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&hl=en&service=mail#identifier">ayoushchauhan1996@gmail.com</a>
+                      <i class="fa fa-envelope"></i>  Email: <a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&hl=en&service=mail#identifier">vinay.badhan21@gmail.com</a>
                         </div>
                    </address>
                 </div>
