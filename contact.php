@@ -83,7 +83,7 @@ require 'core.inc.php';
 		              Indore, M.P.<br>
 		              <i class="fa fa-phone"></i>: +8085519964<br>
 		              <i class="fa fa-envelope"></i>:
-                        <a href="http://google.co.in" style="color:white">vinay.badhan21@gmail.com<br>ayoushchauhan1996@gmail.com</a>
+                        <a href="http://google.co.in" style="color:white">vinay.badhan21@gmail.com<br></a>
                         </span>
 		           </address>
             </div>
@@ -229,7 +229,7 @@ require 'core.inc.php';
 
                       <i class="fa fa-phone"></i>Tel.: +91 8085519964<br>
                       <i class="fa fa-fax"></i>Fax: +852 8765 4321<br>
-                      <i class="fa fa-envelope"></i>  Email: <a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&hl=en&service=mail#identifier">vinay.badhan21@gmail.com</a><br><a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&hl=en&service=mail#identifier">ayoushchauhan1996@gmail.com</a>
+                      <i class="fa fa-envelope"></i>  Email: <a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&hl=en&service=mail#identifier">vinay.badhan21@gmail.com</a><br>
                         </div>
                    </address>
                 </div>
