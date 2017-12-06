@@ -26,7 +26,9 @@ require 'connect.inc.php';
                 else{
                     /*$query = "INSERT INTO `users` '(' 'firstname', 'lastname', 'password', 'email', 'date', 'profession', 'location', 'education') VALUES ('','".mysqli_real_escape_string($conn,$firstname)."','".mysqli_real_escape_string($conn,$lastname)."','".mysqli_real_escape_string($conn,md5($password))."','".mysqli_real_escape_string($conn,$email)."','".mysqli_real_escape_string($conn,$date)."','".mysqli_real_escape_string($conn,'Student')."','".mysqli_real_escape_string($conn,'Indore')."','".mysqli_real_escape_string($conn,'Under-graduate')."','','','uploads/default.png')";*/
 
-                    $query = "INSERT INTO users (firstname, lastname, email) VALUES ('John', 'Doe', 'john@example.com')";
+
+
+                    $query = "INSERT INTO users (firstname, lastname, password, email, 'date', profession, location, education) VALUES ($firstname, $lastname, $password_hash, $email, $date, "Student", "Indore", "B.E." )";
 
                     if($query_run = mysqli_query($conn,$query)){
                         echo "You are registered Succesfully";
