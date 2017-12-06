@@ -10,7 +10,9 @@ $password = $url["pass"];
 $db = substr($url["path"],1);
 
 $conn= new mysqli($server, $username, $password, $db);
-if(!$conn || !(mysqli_select_db($conn,$mysql_db)))
+
+$conn=mysqli_connect($server, $username, $password, $db);
+if(!$conn || !(mysqli_select_db($conn,$db)))
 {
     die($conn_error);
 }
