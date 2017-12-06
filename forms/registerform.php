@@ -24,7 +24,10 @@ require 'connect.inc.php';
                     echo "<h4>User already exist.</h4><br>";
                 }
                 else{
-                    $query = "INSERT INTO `users` VALUES ('','".mysqli_real_escape_string($conn,$firstname)."','".mysqli_real_escape_string($conn,$lastname)."','".mysqli_real_escape_string($conn,md5($password))."','".mysqli_real_escape_string($conn,$email)."','".mysqli_real_escape_string($conn,$date)."','".mysqli_real_escape_string($conn,'Student')."','".mysqli_real_escape_string($conn,'Indore')."','".mysqli_real_escape_string($conn,'Under-graduate')."','','','uploads/default.png')";
+                    /*$query = "INSERT INTO `users` '(' 'firstname', 'lastname', 'password', 'email', 'date', 'profession', 'location', 'education') VALUES ('','".mysqli_real_escape_string($conn,$firstname)."','".mysqli_real_escape_string($conn,$lastname)."','".mysqli_real_escape_string($conn,md5($password))."','".mysqli_real_escape_string($conn,$email)."','".mysqli_real_escape_string($conn,$date)."','".mysqli_real_escape_string($conn,'Student')."','".mysqli_real_escape_string($conn,'Indore')."','".mysqli_real_escape_string($conn,'Under-graduate')."','','','uploads/default.png')";*/
+
+                    $query = "INSERT INTO users (firstname, lastname, email) VALUES ('John', 'Doe', 'john@example.com')"";
+
                     if($query_run = mysqli_query($conn,$query)){
                         echo "You are registered Succesfully";
                     }
