@@ -2,17 +2,14 @@
 
 $conn_error='Could not connect.';
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$mysql_host='us-cdbr-iron-east-05.cleardb.net';
+$mysql_user='bb7b6428344601';
+$mysql_pass='8626c690';
+$mysql_db='heroku_7adf718788690b0';
 
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"],1);
 
-$conn= new mysqli($server, $username, $password, $db);
-
-$conn=mysqli_connect($server, $username, $password, $db);
-if(!$conn || !(mysqli_select_db($conn,$db)))
+$conn=mysqli_connect($mysql_host, $mysql_user, $mysql_pass, $mysql_db);
+if(!$conn || !(mysqli_select_db($conn,$mysql_db)))
 {
     die($conn_error);
 }

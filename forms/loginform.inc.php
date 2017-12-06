@@ -21,7 +21,7 @@ if(isset($_POST['email'])&&isset($_POST['password'])){
             }
         }
         else
-            echo 'Pokemon';
+            echo 'Failed to query the database';
     }
     else{
         echo 'You must submit an e-mail and a password.';
