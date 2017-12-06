@@ -20,7 +20,7 @@ require 'connect.inc.php';
             }else{
                 $query="SELECT `email` FROM `users` WHERE `email`='$email'";
                 $query_run=mysqli_query($conn,$query);
-                if(@mysqli_num_rows($query_run)==1){
+                if(@mysqli_num_rows($query_run)>0){
                     echo "<h4>User already exist.</h4><br>";
                 }
                 else{
