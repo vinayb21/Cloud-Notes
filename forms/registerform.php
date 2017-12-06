@@ -28,7 +28,7 @@ require 'connect.inc.php';
 
 
 
-                    $query = "INSERT INTO users (firstname, lastname, password, email, .'date'., profession, location, education) VALUES ($firstname, $lastname, $password_hash, $email, $date, "Student", "Indore", "B.E." )";
+                    $query = "INSERT INTO users (firstname, lastname, password, email, dob, profession, location, education) VALUES ($firstname, $lastname, $password_hash, $email, $date, "Student", "Indore", "B.E." )";
 
                     if($query_run = mysqli_query($conn,$query)){
                         echo "You are registered Succesfully";
