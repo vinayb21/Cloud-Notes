@@ -7,7 +7,7 @@ if(isset($_POST['email'])&&isset($_POST['password'])){
     $password_hash=md5($password);
 
     if(!empty($email) && !empty($password)){
-        $query = "SELECT id FROM users WHERE email='$email' AND password='$password_hash'";
+        $query = "SELECT id FROM users WHERE email='$email'";
         if($query_run=mysqli_query($conn,$query)){
             $query_num_rows=mysqli_num_rows($query_run);
             if($query_num_rows==0){
